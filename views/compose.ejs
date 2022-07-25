@@ -1,0 +1,19 @@
+<%-include('partials/header')%>
+<h1><%=pageInfo%></h1>
+<form action="/" method="post">
+  <!-- <input type="text" name="title">
+  <textarea name="newContent" rows="8" cols="80"></textarea> -->
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Title</label>
+    <input name="title" class="form-control" id="exampleFormControlInput1" placeholder="Title">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Post</label>
+    <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="5"></textarea>
+  </div>
+
+  <button class="btn btn-primary" type="submit" name="button">Publish</button>
+
+</form>
+
+<%-include('partials/footer')%>
